@@ -1,0 +1,20 @@
+{
+  "name": "amz-marketplace",
+  "interface": {
+    "displayName": "Amazon Image Prompts"
+  },
+  "plugins": [
+    {
+      "name": "amz-image-prompts",
+      "source": {
+        "source": "local",
+        "path": "./plugins/amz-image-prompts"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
