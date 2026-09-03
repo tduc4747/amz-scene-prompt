@@ -1,11 +1,22 @@
 {
   "name": "amz-image-prompts",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Prompt generators for Amazon and TikTok Shop product imagery.",
   "skills": "./skills/",
+  "author": {
+    "name": "tduc4747"
+  },
+  "repository": "https://github.com/tduc4747/amz-scene-prompt",
+  "keywords": [
+    "amazon",
+    "tiktok-shop",
+    "product-photography",
+    "image-prompt",
+    "listing"
+  ],
   "interface": {
     "displayName": "Amazon Image Prompts",
-    "shortDescription": "Viết prompt tạo ảnh sản phẩm cho Amazon và TikTok Shop — skill v2.0",
+    "shortDescription": "Viết prompt tạo ảnh sản phẩm cho Amazon và TikTok Shop — skill v2.1",
     "longDescription": "Sinh prompt tiếng Anh từ ảnh sản phẩm nền trắng và ảnh tham chiếu của đối thủ, để dán sang trình tạo ảnh. Hiện có skill ảnh bối cảnh; sẽ bổ sung skill ảnh main nền trắng và skill ảnh demo tính năng.",
     "category": "Productivity",
     "defaultPrompt": [

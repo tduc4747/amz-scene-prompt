@@ -1,21 +1,25 @@
 # Skill versions
 
-Backups of `plugins/amz-image-prompts/skills/amz-scene-creator/SKILL.md`.
+Bản lưu của `plugins/amz-image-prompts/skills/amz-scene-creator/SKILL.md`.
 
-| File | Version | Notes |
+| File | Version | Ghi chú |
 |---|---|---|
-| `v1.0-SKILL.md` | 1.0 (tag `v1.0`) | First build. Abstracts the REF away: strips stylised graphics such as a glowing shield, and builds a generic American room from the marker list instead of copying the REF's room. |
-| — (live file) | 2.0 (tag `v2.0`) | REF drives the setting, the light and the graphic device. |
+| `v1.0-SKILL.md` | 1.0 (tag `v1.0`) | Trừu tượng hoá ref: xoá graphic device, dựng phòng Mỹ chung chung thay vì chép ref. |
+| `v2.0-SKILL.md` | 2.0 (tag `v2.0`) | Ref điều khiển bối cảnh, ánh sáng và graphic device. Identity lock còn yếu với model tái tạo. |
+| *(file đang chạy)* | 2.1 (tag `v2.1`) | Thêm structural lock. |
 
-## Check which version ChatGPT actually loaded
+## Quay về bản cũ
 
-Send the plugin the message `skill version` on its own. It replies with one line, e.g. `amz-scene-creator v2.0`.
-If it answers anything else, ChatGPT is still running an old cached copy — remove and re-add the plugin.
+```
+git checkout v2.0 -- plugins/amz-image-prompts/skills/amz-scene-creator/SKILL.md
+git commit -m "Roll back skill to v2.0"
+```
 
-## Roll back to 1.0
+Hoặc chép tay:
 
-    copy versions\v1.0-SKILL.md plugins\amz-image-prompts\skills\amz-scene-creator\SKILL.md
-    git commit -am "Roll back skill to v1.0"
-    git push
+```
+copy versions\v2.0-SKILL.md plugins\amz-image-prompts\skills\amz-scene-creator\SKILL.md
+```
 
-Then remove and re-add the plugin in ChatGPT so it picks the change up.
+Nhớ hạ luôn `version` trong `plugins/amz-image-prompts/.codex-plugin/plugin.json`
+cho khớp, rồi xoá marketplace trong Codex và thêm lại.
