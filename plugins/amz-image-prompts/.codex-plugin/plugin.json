@@ -1,6 +1,6 @@
 {
   "name": "amz-image-prompts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Prompt generators for Amazon and TikTok Shop product imagery.",
   "skills": "./skills/",
   "interface": {
