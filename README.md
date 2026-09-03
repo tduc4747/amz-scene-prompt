@@ -67,7 +67,7 @@ Ba dấu hiệu, phải khớp nhau:
 3. Nhắn cho plugin đúng hai chữ `skill version`, nó trả về một dòng `amz-scene-creator vX.Y`
 
 Lệch nhau = Codex đang dùng snapshot cache cũ. Xoá **marketplace** (không phải plugin)
-rồi thêm lại, hoặc `codex plugin marketplace upgrade amz-marketplace`.
+rồi thêm lại, hoặc `codex plugin marketplace upgrade amz-plugins`.
 
 ## Quay về version cũ
 

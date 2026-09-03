@@ -1,5 +1,5 @@
 {
-  "name": "amz-marketplace",
+  "name": "amz-plugins",
   "interface": {
     "displayName": "Amazon Image Prompts"
   },
