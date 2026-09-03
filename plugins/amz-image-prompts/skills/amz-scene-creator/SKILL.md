@@ -45,7 +45,7 @@ State that its identity is locked: every detail preserved exactly, nothing added
 
 Never invent a physical interaction with the product. You do not know how it is operated, what plugs into it, what it can carry, or which part is safe to touch. Do not add a cable, cord, hose, adapter, fuel line, cover or accessory to it. Do not run anything from it to anything else. Do not place an object on it or lean anything against it. Do not put a hand on a specific part of it. If the product already has a cord or attachment visible in its own image, say nothing about that cord at all. State positively in the prompt that nothing is attached to the unit and nothing touches it.
 
-Never place the product where it could plausibly be damaged or would be unsafe: no water, puddles, wet or damp ground, sand, snow underfoot, sloped or unstable surfaces. Keep a heating product clear of curtains, rugs and fabric. The surface it stands on is flat, dry and clean.
+Never place the product where it could plausibly be damaged or would be unsafe: no water, puddles, wet or damp ground, sand, snow underfoot, sloped or unstable surfaces. The surface it stands on is flat, dry and level. A heating product keeps clear air around it, with no fabric draped over it and no curtain or upholstery close enough to touch it, but it may stand on a rug or on a hard floor, whichever the REF shows. Clearance is a matter of distance, not a ban on soft furnishings in the room.
 
 The only thing you may say about its contact with the world is which surfaces rest on the floor or ground, that it has a full contact shadow and ambient occlusion so it never floats, and its rough footprint for scale.
 
@@ -57,7 +57,9 @@ When a REF is present it is the blueprint for the whole picture. Rebuild its sce
 
 Transcribe the setting concretely. Do not abstract it. The image model cannot see the REF, so whatever you leave vague the model invents, and it comes back as a different place. For every scene element that reads clearly in the REF, write what the object is, its material and colour, its rough size, and where it sits in the frame relative to the product. Name eight to fifteen such elements, working outward from the surface under the product to the background. Write "a low mid-tone oak coffee table on a woven grey area rug, to the left of the product" rather than "some furniture", and "three terracotta pots of trailing green foliage on the step behind" rather than "several potted plants". Reproduce the arrangement, not only the inventory: what is near, what is far, what is left, what is right, what the frame edge crops.
 
-Four things never cross over, whatever the REF shows. The reference product's appearance, identity or category, because the user's product replaces it entirely. Any brand name, logo, wordmark, headline, caption, icon, badge, arrow, callout or graphic overlay, because the scene you rebuild is the bare photograph that lies underneath the advertisement, with every one of those surfaces left blank. Any recognisable person's face or identity: take the posture, the action and the framing, and give them to an ordinary anonymous adult. Clothing beyond garment type and plain colour, so "a plain grey t-shirt and dark jeans", never a described outfit and never a printed graphic.
+Four things never cross over, whatever the REF shows. The reference product's appearance, identity or category, because the user's product replaces it entirely. Every piece of writing and branding: brand names, wordmarks, logos, headlines, captions, callout labels, certification marks, watermarks, and the tiled feature boxes that run along the edge of an advertisement, all of which leave their surfaces blank. Any recognisable person's face or identity: take the posture, the action and the framing, and give them to an ordinary anonymous adult. Clothing beyond garment type and plain colour, so "a plain grey t-shirt and dark jeans", never a described outfit and never a printed graphic.
+
+A stylised graphic device is not branding and does not fall under that ban. A glowing shield standing behind the product, a halo, an arc, radiating rays, a spotlight pool, a sweep of warm air: these are wordless picture elements, they are the whole visual idea of the advertisement, and stripping them out is what turns a designed scene into an empty room. Reproduce them. GRAPHIC DEVICE below says how.
 
 Where a REF element would break a rule under THE PRODUCT, such as something attached to the product, a wet or unsafe surface, or a cord running out of it, keep the element in the scene but detach it from the product, or drop that one element. Never let it touch the product.
 
@@ -78,9 +80,15 @@ The scene must give the product a reason to be there. Weather, season, clothing 
 
 The scene must read as American. With a REF, describe the American markers already visible in it, and add one or two from the lists below only if the REF shows too few. Without a REF, include three to five of them. Outdoor: lap siding, brick veneer, asphalt shingles, a privacy or chain-link fence, a mowed lawn, an attached garage with a sectional door, a wide concrete driveway, a mailbox on a post, oak or maple trees. Indoor: drywall with baseboard trim, US electrical outlets and light switches, shaker cabinets, quartz or laminate countertop, hardwood or LVP flooring, a panelled interior door with brass or nickel hardware, a forced-air floor vent, a double-hung window with an insect screen.
 
-Never European, tropical or high-density settings, and never an unspecified minimalist void.
+Never reach into the marker lists for a part of the frame the REF has already furnished. A bare room with a floor vent, a plain white wall and a panelled door is exactly what you get when you assemble a generic American interior instead of copying what the REF actually shows, and it is the most common way this skill fails. Copy the REF's decor first, wall by wall; the markers fill only what the REF leaves empty.
 
-## LIGHT — choose indoor or outdoor first
+Without a REF, never European, tropical or high-density settings, and never an unspecified minimalist void. With a REF, the REF settles this, and a soft, styled, sparsely furnished interior is reproduced as it is.
+
+## LIGHT — the REF first, then indoor or outdoor
+
+When there is a REF, the REF decides the light: its direction, its time of day, its overall warmth or coolness, how soft the shadows are and how bright the room reads. Match it. The two blocks below are the fallback for when there is no REF, and their colour-temperature numbers give way to the REF.
+
+What never gives way, REF or not, is the shared quality block further down: the image stays sharp and clearly resolved, the product keeps its true colour, whites stay white, and no haze, blur or muddy yellow wash sits over the frame. A warm, softly lit scene is allowed and should be matched when the REF is one. A dirty yellow cast is not.
 
 Decide from the scene whether this is an outdoor or an indoor location. Apply only the matching block. Never apply outdoor light rules to an indoor scene.
 
@@ -102,17 +110,23 @@ Sharp, well-resolved detail with crisp edges and legible texture. Background fal
 
 None of this means adding sunlight. Brightness comes from ample ambient light, a well-lit room, or an open bright day. Never from sunbeams, warm shafts or light pools on the floor.
 
-## EFFECT OVERLAY — only when SETTING asks for it
+## GRAPHIC DEVICE — copy the REF's, or add one when SETTING asks
 
-By default the image carries no stylised graphics and the negative tail forbids them. If SETTING asks for a visual effect such as warm air, cool air, steam, water flow or a light beam, include the block below and remove the matching item from the negative tail, so the prompt does not contradict itself.
+Amazon and TikTok scene images very often carry one stylised, non-photographic element sitting in the frame with the product: a large glowing shield or badge shape standing behind it, a halo, an arc, radiating rays, a soft spotlight pool, or a flow of warm air, cool air, steam or water. It is the selling device of the picture, and it is the first thing a reader sees. If the REF has one, the prompt must have one.
 
-Describe it as a graphic overlay composited on top of a finished photograph, not as a real physical phenomenon. Describe positively what it looks like, where it starts and where it ends, and state that it does not touch the product. Example wording for warm air from a heater:
+Reproduce it precisely enough to be built: what shape it is, how large it is relative to the product, where it sits, whether it stands behind the product or wraps around it, what colour it is, whether it is a flat translucent panel or a soft volumetric glow, whether it has a bright outline, and how many nested layers or repeats it has. "A large upright translucent amber shield standing on the floor directly behind the product, about twice the product's height and wide enough that its edges clear the product on both sides, drawn as three nested outlines with a bright warm rim, its lower half hidden behind the product" is a description an image model can build. "A graphic element behind the product" is not.
+
+Describe it as a graphic overlay composited on top of a finished photograph, not as a real physical object in the room. State positively what it looks like, where it begins and where it ends, and that it never covers, dims or obscures any part of the product. If the REF shows it glowing into the room, allow a soft ambient glow on the wall and floor immediately behind and beside the product, and state that it does not light the product itself, does not change the product's colour, and does not change the exposure or the white balance of the photograph. If the REF shows no such spill, state that it emits no light into the scene at all.
+
+If SETTING asks for an effect such as warm air, cool air, steam, water flow or a light beam, build it the same way. Example wording for warm air from a heater:
 
 "Airflow effect: a clean graphic overlay is composited on top of the finished photograph, showing warm air moving out of the front grille. Several smooth curved translucent bands in soft warm orange fan forward and outward from the grille, widening as they travel and sweeping low across the open floor in front of the unit. The bands are semi-transparent with soft feathered edges, evenly spaced, graceful and clearly readable, never dense smoke, steam, fog, fire or sparks. They pass in front of the floor only and never cover, dim or obscure any part of the unit itself, and they fade out before reaching the edge of the frame.
 
 This overlay is the only stylised element in the image. It emits no light into the scene: it casts no glow on the floor, walls, furniture or the unit, it creates no reflection, and it does not change the exposure or the white balance of the photograph. Everything beneath and around it remains a straight neutral photograph."
 
-Keep the effect broad and readable rather than tightly prescribed. Do not over-specify its path.
+Keep the device broad and readable rather than tightly prescribed. Do not over-specify its path.
+
+Whenever a graphic device is included, delete from the negative tail every item that would forbid it, so the prompt does not contradict itself. Writing and branding stay banned regardless: no text, no headlines, no captions, no logos, no wordmarks, no certification marks, no watermark, no feature boxes.
 
 ## DEFAULTS
 
@@ -129,7 +143,7 @@ Emit the prompt as prose paragraphs in this order:
 1. Opening line: raw unedited commercial photograph of the product shown in the attached reference image, a generic category noun, in the chosen location and moment. Then the identity lock and the viewpoint lock.
 2. Isolation and safety: nothing attached, nothing touching, contact shadow, dry clean level surface, clearance.
 3. Placement and framing: where it sits in the frame, roughly how much of the frame it fills, the scale anchor.
-4. The effect overlay block, only if SETTING asked for one.
+4. The graphic device block, whenever the REF carries one or SETTING asked for one. Place it here so it is described before the room, not bolted on at the end.
 5. Setting: the location, then the scene rebuilt element by element from the REF, giving each one its material, colour, rough size and position, from the surface under the product outward to what the frame edge crops. Then the American markers, the season, the time of day, and any people with their posture and action. With a REF this is normally the longest part of the prompt; two or three sentences here is a failure.
 6. Light: the matching branch plus the shared quality rules.
 7. Camera: body, lens, aperture, ISO, height, plus the micro-texture and grain list and the one deliberate imperfection.
@@ -139,7 +153,7 @@ Emit the prompt as prose paragraphs in this order:
 
 End the prompt with: raw unedited commercial photograph, sharp and clear, bright and well lit, no CGI, no 3D render look, no glossy plastic sheen, no beauty retouching, no HDR glow, no lens flare, no haze, no washed out shadows, no yellow cast, no global warm grade, no amber wash, no brown shadows, no sunbeams indoors, no artificial warm light pools on the floor, no underexposure, no dim or gloomy interior, no grey colour cast, no desaturated grey veil, no crushed blacks, no floating product, no flat lighting, no wet ground, no puddles, no cables or cords added, nothing plugged into the product, nothing attached to the product, no smoke, no steam, no fog, no flames, no sparks, no text, no watermark, no logos, no icons, no badges, exactly one product in frame, do not redesign or substitute the product, preserve every detail exactly as shown in the attached reference image.
 
-If the scene is outdoors, drop "no sunbeams indoors" and "no dim or gloomy interior". If SETTING asked for an effect overlay, drop the negative items that would forbid it.
+If the scene is outdoors, drop "no sunbeams indoors" and "no dim or gloomy interior". If the prompt includes a graphic device, drop every item that would forbid it, which normally means "no icons", "no badges", and whichever of "no smoke", "no steam", "no fog", "no HDR glow" and "no lens flare" apply. If the REF is a warm, softly lit scene, drop "no yellow cast", "no global warm grade", "no amber wash", "no brown shadows" and "no artificial warm light pools on the floor", and keep in their place "no haze", "no blur", "no muddy or dirty colour", "sharp and clear", so warmth survives without the frame going dirty. "No text", "no watermark" and "no logos" are never dropped.
 
 ## CHECK — run silently before replying, never print it
 
@@ -150,5 +164,9 @@ If there is a REF, confirm the prompt rebuilds its setting rather than describin
 Confirm nothing is attached to the product and no cord, hose or accessory was invented. Confirm the surface under it is dry, flat and clean, and that a heating product is clear of fabric. Confirm the identity lock and the viewpoint lock are stated. Confirm the REF advertisement is never mentioned and that "the attached reference image" refers only to the product.
 
 Confirm the light block matches the location: if the scene is indoors, no sunlight or sunbeam wording survives anywhere. Confirm the season, weather and surroundings give the product a reason to be there without any invented interaction. Confirm every SETTING instruction is applied. Confirm the negative tail does not contradict anything the prompt asks for.
+
+If the REF carries a stylised graphic device, confirm the prompt describes it with shape, size, position, colour and layering, and that nothing left in the negative tail forbids it. A prompt that quietly dropped the REF's shield, halo or rays is wrong even if everything else matches.
+
+Confirm the room in the prompt is the REF's room with the REF's furnishings, and not a bare interior assembled from the American marker list. Confirm the light matches the REF's warmth and softness and that the negative tail does not ban the REF's own tone.
 
 Finally, confirm your reply is the prompt text and nothing else — no image was generated, no preamble, no markdown, no closing remark.
